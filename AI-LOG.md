@@ -55,3 +55,17 @@ Changed: Bản AI-LOG đầu còn chung chung, nên em yêu cầu viết lại b
 Rejected: Em bỏ cách viết chung chung của bản nháp đầu. Em cũng không điền kết quả gate, link CI hay ảnh test đỏ như thể đã có, vì em chưa cung cấp được các bằng chứng đó.
 
 By hand: Em đưa output test, diff và file mẫu cho ChatGPT. ChatGPT soạn văn bản; em sẽ đối chiếu lại với repository và tự điền MSSV, điểm tự chấm, kết quả `npm run check`, link CI và minh chứng test đỏ trước khi nộp.
+
+## 2026-09-30 - Nhờ Codex đọc lại, chấm điểm và kiểm tra lần cuối
+
+Tool: Codex.
+
+Asked for: Đọc lại project, chấm điểm theo yêu cầu đề bài gửi kèm và các tiêu chí trong báo cáo tự đánh giá; nhờ AI kiểm tra lại lần cuối trước khi nộp.
+
+Kept: Codex đọc các file trong project, xem minh chứng test đỏ và lịch sử commit, chạy `npm run check` với kết quả **15 test đạt, 0 thất bại, 0 bị bỏ qua**, kiểm tra format đạt. Em dùng phần nhận xét và báo cáo tự đánh giá do Codex hỗ trợ soạn.
+
+Changed: Em nhờ Codex điền báo cáo vào `SELF_ASSESSMENT_REPORT.md`, bổ sung link CI em cung cấp và ghi lại lần hỗ trợ này vào AI-LOG.
+
+Rejected: Không có đề xuất về code hoặc test bị từ chối trong lần kiểm tra cuối.
+
+By hand: Em gửi yêu cầu đề bài, bố cục báo cáo, thông tin sinh viên và link GitHub Actions; yêu cầu sửa nhận xét cho đúng thực tế. Codex thực hiện việc đọc file, chạy gate, hỗ trợ chấm điểm và cập nhật tài liệu; em không nhận các thao tác này là tự thực hiện. Công cụ của Codex chưa tải được trang CI để xác minh trạng thái run.
