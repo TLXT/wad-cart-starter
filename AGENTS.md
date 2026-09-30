@@ -2,7 +2,6 @@
 
 ## Stack
 - Use plain JavaScript with ES modules.
-- Use Node.js 24.
 - Use the built-in node:test and node:assert/strict modules.
 
 ## Commands
